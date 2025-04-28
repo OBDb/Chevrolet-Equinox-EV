@@ -1,7 +1,15 @@
 { "commands": [
-{ "hdr": "DACB", "rax": "CB", "dbg": true, "cmd": {"22": "27C6"}, "freq": 1,
+{ "hdr": "DA17", "dbg": true, "cmd": {"22": "33E5"}, "freq": 1,
   "signals": [
-    {"id": "EQUINOXEV_SOC_TOT", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "SoC (total)", "suggestedMetric": "stateOfCharge", "description": "The total charge remaining in the battery pack."}
+    {"id": "EQUINOXEV_HVBAT_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "HV battery voltage"}
+  ]},
+{ "hdr": "DACB", "dbg": true, "cmd": {"22": "27C6"}, "freq": 1,
+  "signals": [
+    {"id": "EQUINOXEV_SOC_HD", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "SoC (high res)", "suggestedMetric": "stateOfCharge", "description": "A high resolution measure of the battery pack's remaining state of charge."}
+  ]},
+{ "hdr": "DACB", "dbg": true, "cmd": {"22": "2B43"}, "freq": 1,
+  "signals": [
+    {"id": "EQUINOXEV_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "SoC", "suggestedMetric": "stateOfCharge"}
   ]}
 ]
 }
