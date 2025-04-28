@@ -1,4 +1,7 @@
 { "commands": [
-
+{ "hdr": "DACB", "rax": "CB", "dbg": true, "cmd": {"22": "27C6"}, "freq": 1,
+  "signals": [
+    {"id": "EQUINOXEV_SOC_TOT", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "SoC (total)", "suggestedMetric": "stateOfCharge", "description": "The total charge remaining in the battery pack."}
+  ]}
 ]
 }
