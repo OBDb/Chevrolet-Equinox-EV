@@ -1,0 +1,8 @@
+command_id: DACB.2227C6
+test_cases:
+- response: 18DAF1CB056227C6B18E
+  expected_values:
+    EQUINOXEV_SOC_HD: 69.35836
+- response: 18DAF1CB056227C6B2D6
+  expected_values:
+    EQUINOXEV_SOC_HD: 69.85885
