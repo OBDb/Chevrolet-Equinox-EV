@@ -1,0 +1,5 @@
+command_id: DA1D.2233E5
+test_cases:
+- expected_values:
+    EQUINOXEV_HVBAT_V: 14.5
+  response: 18DAF11D046233E591
