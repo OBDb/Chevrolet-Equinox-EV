@@ -1,4 +1,7 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "DACB", "type": "battery" }
+  ],
+  "commands": [
 { "hdr": "DA1D", "cmd": {"22": "33E5"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "EQUINOXEV_HVBAT_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "DMCM battery voltage", "description": "From the Drive Motor Control Module."}
